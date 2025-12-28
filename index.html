@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+
+</head>
+<body>
+   <header>
+  <nav class="flex items-center justify-between px-6 py-4">
+
+    <!-- Logo -->
+    <h2 class="text-2xl md:text-3xl font-bold py-4 logo-glow" id="logo">
+      Bhushan
+    </h2>
+
+    <!-- Hamburger Button (Mobile only) -->
+    <button
+      id="menu-btn"
+      class="md:hidden text-3xl focus:outline-none"
+    >
+      ☰
+    </button>
+
+    <!-- Menu -->
+ <ul id="menu"
+  class="hidden md:flex flex-col md:flex-row gap-4 md:gap-6
+         absolute md:static top-16 left-0 w-full md:w-auto
+         bg-[#0f172a] md:bg-transparent p-6 md:p-0
+         shadow-md md:shadow-none z-50 h logo-glow">
+
+      <li><a href="#index" class="hover:text-blue-700">Home</a></li>
+      <li><a href="#About" class="hover:text-blue-700">About Us</a></li>
+      <li><a href="#Skills" class="hover:text-blue-700">Skills</a></li>
+      <li><a href="#Projects" class="hover:text-blue-700">Projects</a></li>
+      <li><a href="#Contact" class="hover:text-blue-700">Contact</a></li>
+    </ul>
+
+  </nav>
+</header>
+
+    <!-- home section -->
+    <section id="index" class="hero text-center px-4">
+        <h1  class="text-2xl md:text-4xl font-bold">Hey,I'm BHUSHAN 🖐️</h1>
+        <p  class="text-xl md:text-3xl mt-2">Full-Stack Web Developer</p>
+        <button class="bg-blue-500 rounded-full text-lg md:text-xl py-2 px-5 mt-4 logo-glow" id="btn"><a href="#Projects"> View projects</a></button>
+    </section>
+    <br><br>
+    <!-- Abouttt -->
+    <section id="About" class="px-4">
+        <h2 class="text-3xl font-bold text-center ">About Me</h2>
+        <p class="text-center font-semibold">BCA student and Web Developer with strong skills in HTML, CSS, JavaScript
+            <br>And React
+            known for efficient debugging and clean, responsive UI development.
+        </p>
+    </section><br>
+    <!-- skills -->
+    <section id="Skills">
+        <h2 class="text-center text-3xl font-extrabold">SKILLS</h2>
+        <div class="flex flex-wrap justify-center gap-3 px-4 text-black ">
+            <span class="bg-gray-200 px-3 py-1 rounded hover:bg-blue-700">HTML 5</span>
+            <span class="bg-gray-200 px-3 py-1 rounded hover:bg-blue-700">CSS 3</span>
+            <span class="bg-gray-200 px-3 py-1 rounded hover:bg-blue-700">JAVASCRIPT</span>
+            <span class="bg-gray-200 px-3 py-1 rounded hover:bg-blue-700">BOOTSTARP</span>
+            <span class="bg-gray-200 px-3 py-1 rounded hover:bg-blue-700">REACT.JS</span>
+            <span class="bg-gray-200 px-3 py-1 rounded hover:bg-blue-700">GITHUB</span>
+        </div>
+    </section><br>
+    <!-- projects -->
+    <section id="Projects" class="px-4">
+        <div class="projects-box">
+        <h3 class="text-center text-xl md:text-2xl font-extrabold">Company Website</h3>
+            <p class="text-center text-base md:text-xl font-semibold mt-2">Responsive business website using HTML,CSS & JavaScript</p>
+        </div>
+    </section>
+    <!-- contact  --><br>
+    <section id="Contact">
+         <h2 class="text-center font-extrabold text-3xl">📞Contact Me</h2>
+  <p class="text-center font-extrabold text-lg">📩Email:bhushankudkar2006@gmail.com</p>
+    </section>
+
+<br>
+    <footer class="text-center text-2xl ">
+       <div class="flex flex-wrap justify-center gap-6 text-2xl">
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/918169922898"
+     target="_blank"
+     class="text-green-500 hover:text-green-600">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Instagram -->
+  <a href="https://instagram.com/bhushan.kudkar"
+     target="_blank"
+     class="text-pink-500 hover:text-pink-600">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+
+  <!-- LinkedIn -->
+  <a href="https://www.linkedin.com/in/bhushan-kudkar-37b342372?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+     target="_blank"
+     class="text-blue-600 hover:text-blue-700">
+    <i class="fa-brands fa-linkedin"></i>
+  </a>
+
+  <!-- GitHub -->
+  <a href="https://github.com/bhushan-28"
+     target="_blank"
+     class="text-gray-400 hover:text-white">
+    <i class="fa-brands fa-github"></i>
+  </a>
+</div>
+        <p>&copy;2025 Bhushan kudkar</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+        integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="index.js"></script>
+   <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const menu = document.getElementById("menu");
+    const menuBtn = document.getElementById("menu-btn");
+
+    // Toggle menu on hamburger click
+    menuBtn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+
+    // Close menu when a link is clicked (mobile)
+    document.querySelectorAll("#menu a").forEach(link => {
+      link.addEventListener("click", () => {
+        if (window.innerWidth < 768) {
+          menu.classList.add("hidden");
+        }
+      });
+    });
+  });
+</script>
+
+
+</body>
+
+</html>
